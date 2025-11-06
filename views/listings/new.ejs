@@ -1,0 +1,80 @@
+<% layout("/layouts/boilerplate") %>
+
+  <form action="/listing/new" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+    <div class="mb-3">
+      <label for="title" class="form-label">Enter title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        placeholder="enter title"
+        name="title"
+        required
+      />
+      <div class="invalid-feedback" id="title">title is required!</div>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Enter description</label>
+      <textarea
+        class="form-control"
+        id="description"
+        placeholder="write description here"
+        name="description"
+        rows="3"
+        required
+      ></textarea>
+      <div class="invalid-feedback" id="description">
+        give a brief description
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">upload image</label>
+      <input
+        type="file"
+        class="form-control"
+        id="image"
+        name="image"
+      />
+    </div>
+    <div class="PandC">
+      <div class="mb-3 price">
+        <label for="price" class="form-label">Enter price</label>
+        <input
+          type="text"
+          class="form-control"
+          id="price"
+          placeholder="enter price"
+          name="price"
+          required
+        />
+        <div class="invalid-feedback" id="price">price is required!</div>
+      </div>
+      <div class="mb-3 country">
+        <label for="country" class="form-label">Enter country</label>
+        <input
+          type="text"
+          class="form-control"
+          id="country"
+          placeholder="enter country"
+          name="country"
+          required
+        />
+        <div class="invalid-feedback" id="country">
+          country name is required!
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="location" class="form-label">Enter location</label>
+      <input
+        type="text"
+        class="form-control"
+        id="location"
+        placeholder="enter location"
+        name="location"
+        required
+      />
+      <div class="invalid-feedback" id="location">location is required!</div>
+    </div>
+    <button>add</button>
+  </form>

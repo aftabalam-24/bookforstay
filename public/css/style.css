@@ -1,0 +1,47 @@
+body{
+    padding: 0 75px;
+}
+.icon >i{
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+}
+.navbar{
+    background-color: #fff !important;
+    padding: 15px 0 ;
+}
+.navbar a{
+    font-size: 20px;
+}
+.search{
+    width: 13.5rem;
+}    
+.card-container >a{
+    text-decoration: none;
+}
+.PandC{
+    display: flex;
+    gap: 1rem;
+}
+.price{
+    width: 35%;
+}
+.country{
+    width: 65%;
+}
+.footer{
+    margin-top: 0px;
+}
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer ul li{
+ list-style: none !important;
+}
+#map{
+    position: relative !important;
+    height: 400px;
+    width: 600px;
+}
